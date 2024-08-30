@@ -8,33 +8,36 @@ importers:
 
   .:
     dependencies:
+      '@aws-sdk/client-sso-oidc':
+        specifier: ^3.637.0
+        version: 3.637.0(@aws-sdk/client-sts@3.583.0)
       '@remotion/cli':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/fonts':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/lambda':
-        specifier: 4.0.187
-        version: 4.0.187(@aws-sdk/client-sso-oidc@3.637.0)(@remotion/bundler@4.0.187)(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@remotion/bundler@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/paths':
-        specifier: 4.0.187
-        version: 4.0.187
+        specifier: 4.0.206
+        version: 4.0.206
       '@remotion/preload':
-        specifier: 4.0.187
-        version: 4.0.187
+        specifier: 4.0.206
+        version: 4.0.206
       '@remotion/renderer':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/shapes':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/transitions':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@remotion/zod-types':
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)(zod@3.22.3)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(zod@3.22.3)
       axios:
         specifier: ^1.7.3
         version: 1.7.5
@@ -51,15 +54,15 @@ importers:
         specifier: 5.2.1
         version: 5.2.1(react@18.3.1)
       remotion:
-        specifier: 4.0.187
-        version: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+        specifier: 4.0.206
+        version: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod:
         specifier: 3.22.3
         version: 3.22.3
     devDependencies:
       '@remotion/eslint-config':
-        specifier: 4.0.187
-        version: 4.0.187(eslint@8.57.0)(typescript@4.9.5)
+        specifier: 4.0.206
+        version: 4.0.206(eslint@8.57.0)(typescript@4.9.5)
       '@types/react':
         specifier: ^18.0.26
         version: 18.3.4
@@ -611,122 +614,125 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@remotion/bundler@4.0.187':
-    resolution: {integrity: sha512-/UbwSMU694aRUyvZcV/jGbgKXyTIhFIzaAlvAo4LJ/uJW3DqkZtCe8O4Yr456lOmA3ZC9mW2sHN47eL935jFtw==}
+  '@remotion/bundler@4.0.206':
+    resolution: {integrity: sha512-dp3h7MGE7xMTFhGIh7G62rn1l7ujDV38OFuIFh9di1teu04gC9OWbTUWhdlZkKgKuMXDq0+AIT+iF/CYDxLOZw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/cli@4.0.187':
-    resolution: {integrity: sha512-5rFEC8z07KGD1zDJUuHYXFh3O5lGkezOp9juuRjinDA1kNY2UYBakNqbeL1xvIHcL6T05ttYTMVonHxaqGX/Uw==}
+  '@remotion/cli@4.0.206':
+    resolution: {integrity: sha512-fV+fVTsDRnAPbXUZMG0pCkuYc4eCxl5F7u4vm4qn7wqdIQG5Zh+EqZTAXSlWW0YJAnbDDfqQkrEBpj4Bwqhf7w==}
     hasBin: true
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/compositor-darwin-arm64@4.0.187':
-    resolution: {integrity: sha512-zUzjymcCaFKma6icRQNUG9McnbeasutoYc+mg6JIWLf36NLkoS1acaJ/M77yOJCzUtVoC5dAuhmbF0UVt0GAGA==}
+  '@remotion/compositor-darwin-arm64@4.0.206':
+    resolution: {integrity: sha512-+h9ph1nDAd2RfcZtSzMZ0DDJHBgen8MUl8zhDGEMSlqMeDZ/jYbbDSVngHPsIuaW7937hVMiAmG3srxLujtqAQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@remotion/compositor-darwin-x64@4.0.187':
-    resolution: {integrity: sha512-SKluVclZDoClGnTrFO1ffhk4m6ug5CB8bnETfAQrFETq3AHshD3FTaEj+5Geb/eGqiRoWb3s00MMf8eiQuQXOA==}
+  '@remotion/compositor-darwin-x64@4.0.206':
+    resolution: {integrity: sha512-fjjkX5TQF+/grSmWLl2uOQATClgPAWHvRV4yyXA8ei+sGWkAuKxaUTBcY9wOkUJ/b00tLtO75nWXaGFqyolT/w==}
     cpu: [x64]
     os: [darwin]
 
-  '@remotion/compositor-linux-arm64-gnu@4.0.187':
-    resolution: {integrity: sha512-zlst2NRS0XfbW9KtTTZ8vl6tqq3B6kxNR5VkgLI0R8IyirIJEusG2LSdsuYabaVV/i4/aAKEDc65JwCeN+wamw==}
+  '@remotion/compositor-linux-arm64-gnu@4.0.206':
+    resolution: {integrity: sha512-t/KBfuxOMYSHeTNxsTcG19TWGh4MWe05ihqhbtganr+eOcBcL+civDqX8UXBjHIZJ6IFlU2b3w7YSKXwptgUzQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@remotion/compositor-linux-arm64-musl@4.0.187':
-    resolution: {integrity: sha512-bt3aaovqdmBtrWDzocDWtyg24xF+kk1DLx6qpUM8dyeW+PMnX6SGyxrrJ4l6pRWDWLzflqKnd9uEMGMFSTZlZA==}
+  '@remotion/compositor-linux-arm64-musl@4.0.206':
+    resolution: {integrity: sha512-zG4+cliYnFhNAqlN89QV61EEQogaXZpsvu3y9pN8zeY69cGb3iMZ+cYFHKZdp5JeApJ7qrumg+lMMB/IEMiq1g==}
     cpu: [arm64]
     os: [linux]
 
-  '@remotion/compositor-linux-x64-gnu@4.0.187':
-    resolution: {integrity: sha512-EZ8RKY5XSUnQsWZ7R82wO4gKmm7cSHASCYgCEIrCFK/KMlEXn+fs/pZKcQ6fZulN7RJWZqolL9qQdrOvnH7CuA==}
+  '@remotion/compositor-linux-x64-gnu@4.0.206':
+    resolution: {integrity: sha512-r70nvKnQkqyjBkEKH9B941GnjAa9Xtd/53QfAOG/2vRvfShlrfhrf/6VQ1PY0IE30xTtSU42AU0Xa0p0IIVeCw==}
     cpu: [x64]
     os: [linux]
 
-  '@remotion/compositor-linux-x64-musl@4.0.187':
-    resolution: {integrity: sha512-JtE3/HRzD4HjjErJtqOAF9u5g6BdJThPChhySo9IPS2HljQ2PNmrY70xK0l4GEjLFT0y2iEcXQJqpWV/qLBYHg==}
+  '@remotion/compositor-linux-x64-musl@4.0.206':
+    resolution: {integrity: sha512-f+1QMMqIUqNwltNGo8MOVH+xh9FAeGwfVjx4voORsecHjaAmMmHmsZFfeMdYmJhF8ARVkNjIHyg2n5l/EORcng==}
     cpu: [x64]
     os: [linux]
 
-  '@remotion/compositor-win32-x64-msvc@4.0.187':
-    resolution: {integrity: sha512-O4VU/DKS6fvDnR5QLTnCb1z4UC51TQOe31HlNhrFYufgQCEMvYRaiEr2uVTIje3WMYhOesWLMQkIqlFfrLHSrQ==}
+  '@remotion/compositor-win32-x64-msvc@4.0.206':
+    resolution: {integrity: sha512-3gMRSFyV9Zc3Y/DD/8IFdTq0al+OmDoCIiOPm6jJfyYQbM4jfbRKBRZdHNyYL9DlFnW5LWuFr49qoShxb4sE1A==}
     cpu: [x64]
     os: [win32]
 
-  '@remotion/eslint-config@4.0.187':
-    resolution: {integrity: sha512-9HasOfXAcQplVqjvTFDLghbd/OQJgqOMo3pnV7MvPnlTQx0dTbBbfYlXDe3qGSk5qAMpPLJpsMKPLYNyJUJeJg==}
+  '@remotion/eslint-config@4.0.206':
+    resolution: {integrity: sha512-kSdjT8lpsrptREERfB3J+Za5CiUA/XK3hXp3WsuhnLUTcdHDWNU3pQfNTsBdVqpTWURKiJ1rJ1Q4SIcC9tCHTQ==}
     peerDependencies:
       eslint: '>=7.15.0'
 
-  '@remotion/eslint-plugin@4.0.187':
-    resolution: {integrity: sha512-ez1CsMJ/lyLcp1XGbRs9QCT7A5XXsGQpDDFJqsYmn7YuPEMUchfJlaI+Yj0mMK7pR47KNz8eOkvDkLgy82o/dA==}
+  '@remotion/eslint-plugin@4.0.206':
+    resolution: {integrity: sha512-mTizkQYqWHCZTh3PYn9kG2ZH493ZH6SmpHCju1GEdJ91aEBIC9M63VIF3k0Q+2EavnsR1Q9wR+JNCeAqU34cEQ==}
     peerDependencies:
       eslint: '>=7.0.0'
 
-  '@remotion/fonts@4.0.187':
-    resolution: {integrity: sha512-R+7/rvClOGPLJvHnirqDwELQm5bCAfMW8oj/Updz1kjQSKmKQeMwdl56jNyY2pC7MIP9VRWPvkbdxmgQ0nEXVg==}
+  '@remotion/fonts@4.0.206':
+    resolution: {integrity: sha512-u+cDGnC5m6uXtaJbjEjYako+1m0LHgmYqSOmqjCdmK71IOPn4sWOE9VCH5tNQEi3FBQxLPpdRkA4M6ARhZBrDw==}
 
-  '@remotion/lambda@4.0.187':
-    resolution: {integrity: sha512-kfIrdepn/Ewnu3eCgy1pMgZlx1h5VNcrgepohxNdGulxtq5Mh2xY0QAqT0Vz6nQMjKJMrR8dX0YWPiCUxaW8Wg==}
+  '@remotion/lambda@4.0.206':
+    resolution: {integrity: sha512-YBEJ8naNKE3nfXlqnUC6x70JVHwvEtywgsMDtOWaSaBdnbvfaa2dY0ojrb4d9FXNjOwl3kdpLCVmOfyb99NM5A==}
     peerDependencies:
-      '@remotion/bundler': 4.0.187
+      '@remotion/bundler': 4.0.206
 
-  '@remotion/media-utils@4.0.187':
-    resolution: {integrity: sha512-k6UzclnPfMs7wwA3FpEJv2eJ9ll0hBX7R7bU9SbZYjQ28+ZNsO9oRYYMYhfLdK0ztdxzD2ETvgB5uwBp1GpaBQ==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-
-  '@remotion/paths@4.0.187':
-    resolution: {integrity: sha512-84nltarkS5riDL2QJ6rUqIeSg+kLxOwAbmiXLNa8fahw+d8hZ6s2biwvDZ7Guw6Na+rO58RE2V7CfTakiBovbw==}
-
-  '@remotion/player@4.0.187':
-    resolution: {integrity: sha512-F4/Tit5YBXebXlDxO8bJE9frwdo/ZAs1LGZVdkd8gSzzOhx6oGTEIZJVpIFrILwraxqdpFVTXoqWEw2zktYByw==}
+  '@remotion/media-utils@4.0.206':
+    resolution: {integrity: sha512-mV+9VHseqtZzlFUAPFOHZ9BBB7W4u+TBm2Ccn7q63iDPv2NF5ccgUe/MNM5pGR4RCUEhAgguYa9+6AY9Bhb3Xg==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/preload@4.0.187':
-    resolution: {integrity: sha512-H45mlc0vmy9foGec/bVs7p3D0SdGvRdv0cbNtAdEaHc7iZItpuiBtJh7L/32ZWN30rsQ/IDttuX71H4YqXd/Zw==}
+  '@remotion/paths@4.0.206':
+    resolution: {integrity: sha512-VSMHCZhSdL1IITCdF/YJeIkuqaKN/Pf/kseXKhZ3lbrJi4tizlo0WYD3yCbR7fXvpI32WT2lgG6znNRyEMKF2Q==}
 
-  '@remotion/renderer@4.0.187':
-    resolution: {integrity: sha512-BZhObRb3i8kF4PT5ORNzQ4QuN3qkxxsCWLi87V71DbTYSECToTBeEPfOVpW6Xnk8uZh3oe+ZrGJynjTws9RynA==}
+  '@remotion/player@4.0.206':
+    resolution: {integrity: sha512-hOrHRI3hsB12A8JMX4XBFgCD04PFqR3+kcgsPsRk1SvpyVQ8oBKXI3Z1QF0HIlTIZXVmR/u0Lt6emvVCFCyppQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/shapes@4.0.187':
-    resolution: {integrity: sha512-1pgS0dwqx8y1T/YlQ4j3m7039RDupAr28E9+SB4xTg6zMpIFqmZoccMsR0/jxPEGz3axXwHg7kQXjnu0Yd+I4w==}
+  '@remotion/preload@4.0.206':
+    resolution: {integrity: sha512-iLn3HAyUrnOOx/SQkI4gxn+qaG2OjwQcCM57vqzKllv4KKfoNI55xHvRBq02bjr2i6RzbaQNz/iEW2PwC/X1vA==}
+
+  '@remotion/renderer@4.0.206':
+    resolution: {integrity: sha512-lC6/J6achFpEODXk8A8urfdodovG1Ye8fF52asiXbDMlRdkOVMBmNV9nkwb7BBbbANatfBaHey0yE9HOaGkkKA==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/streaming@4.0.187':
-    resolution: {integrity: sha512-6KCN05bTKvSO/6e6kmjO5MltZCZX/G9o536INr+OlxUWQygg90feBQ84ExdFbJBZVHDQT4PuAf49l2S9pzB6Iw==}
+  '@remotion/serverless@4.0.206':
+    resolution: {integrity: sha512-ITzHDm4dFxkJMV5dpcgOFirgeS+e2uh2pUDGaxU4WzcbhZ6NaBOful2zgIOZ7EsfS1CXD2kw391GdhnmMm4cHg==}
 
-  '@remotion/studio-server@4.0.187':
-    resolution: {integrity: sha512-YIK0GLFVO//DlvcNlibELoOM5TE63P30EfRcowdimwJxpSmFhfeQ8/UhdjEEVn9YBEgDz13pCNsCfVTqo54+Yg==}
-
-  '@remotion/studio-shared@4.0.187':
-    resolution: {integrity: sha512-OdfdXC2MzX969dUfgnklRuwQCDucnvaUrCKFl7BHiFTNS1afq075roxJkI8/doLj57zo7gbqPoZ86UsZlvmttA==}
-
-  '@remotion/studio@4.0.187':
-    resolution: {integrity: sha512-tAm64FefgZF3sSv3WnXzejp/KoGG/H+SfUtKUQ8txUEBtd9uyic5t7XA42eWVtq1YwnP95ak2xIW5BkYt+K6Ag==}
-
-  '@remotion/transitions@4.0.187':
-    resolution: {integrity: sha512-vK0AiqizWVKhQtCPg1jqGvYuY9rLWr29RdhZl3OEg4GQg9Cg1bbYCdG36ggR62XkbRWaN1zvDqIx8EPAqAfvKw==}
+  '@remotion/shapes@4.0.206':
+    resolution: {integrity: sha512-5EsFMFgUWc5MI4QUy3SwWVdTH16XGyvb7d35N8KDwM5/pum5gWX6lfXrGVrnwYZuyn/CqxXKsb5JsDuDz+ybZw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@remotion/zod-types@4.0.187':
-    resolution: {integrity: sha512-WOFSc8oByfIT5aQ7YBesdSKjqBXZqs56tdz2rQFj5nrf0Fw3h9yezhZ798Xmm/2EzPNhM0s4ha6fbc1PTCQfQg==}
+  '@remotion/streaming@4.0.206':
+    resolution: {integrity: sha512-+cfdk2uCWesnDnQ6jkbxCqdZ1Sj8UBDInrYDEoo7c4xJqX99hApKXlGkRakD46gxFBuO577ymtZl4gkleNlJpw==}
+
+  '@remotion/studio-server@4.0.206':
+    resolution: {integrity: sha512-BianuZFMjKL82UcfVA2EiOyMG1Hg1rHrQylq5v5T7ZxHfERL4x0qLBi/SYtt69N++eG4xihcmA4J/GAbMn3qYw==}
+
+  '@remotion/studio-shared@4.0.206':
+    resolution: {integrity: sha512-yohixGc5TesZ3+Zkrh+oAWQ2X5itgSgiPNxYnMH829QERkqXohBAjkERwVeTTArFzgjfFNPNsoztHIerq7lEKw==}
+
+  '@remotion/studio@4.0.206':
+    resolution: {integrity: sha512-iuj/HlIo5envtIsm0me7ansSuUWsaMu6zt4ievzlVjAHbmY2JQpbv3r+/RGjK//S2Rm/4J87ksnfpCaQBwJ5ng==}
+
+  '@remotion/transitions@4.0.206':
+    resolution: {integrity: sha512-Z4DRDYx2kAcPhVWLZutEAFLHDxb5ygmdveGOmAnbEfQGe0/PWT9w+xpSyxDKZPgscUwwmfgl5DKeEyU/O9WWaw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+
+  '@remotion/zod-types@4.0.206':
+    resolution: {integrity: sha512-43VGVt7ffqru+OTk55/CLQ1baHwFDgf6KVEyJc7tQ/M/WnKqBreJ4nHJfz0EK+hAPBaffm0GfQO5DuL2374q6Q==}
     peerDependencies:
       zod: 3.22.3
 
@@ -2095,8 +2101,8 @@ packages:
     resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
     engines: {node: '>= 0.4'}
 
-  remotion@4.0.187:
-    resolution: {integrity: sha512-wPSoFidlJ50qf65SX3eIcFlSXZbq5KttOL3ndTQpUA0jUm7F4g9qKjGJcDch+VMGMd3WfWi9YMBhdG9d5LsqTg==}
+  remotion@4.0.206:
+    resolution: {integrity: sha512-2RTM3BG6ep2POLndSG3EhgwzwVuQyho14hkxtZWZSRo1m1fW9NxtSDi4ULkifEupmwUMJQBWusGU+54/7E1TEQ==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
@@ -2443,19 +2449,19 @@ snapshots:
   '@aws-crypto/crc32@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       tslib: 1.14.1
 
   '@aws-crypto/crc32@5.2.0':
     dependencies:
       '@aws-crypto/util': 5.2.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       tslib: 2.7.0
 
   '@aws-crypto/crc32c@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       tslib: 1.14.1
 
   '@aws-crypto/ie11-detection@3.0.0':
@@ -2467,7 +2473,7 @@ snapshots:
       '@aws-crypto/ie11-detection': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -2478,7 +2484,7 @@ snapshots:
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-crypto/supports-web-crypto': 3.0.0
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       '@aws-sdk/util-locate-window': 3.568.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
@@ -2496,7 +2502,7 @@ snapshots:
   '@aws-crypto/sha256-js@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       tslib: 1.14.1
 
   '@aws-crypto/sha256-js@5.2.0':
@@ -2515,13 +2521,13 @@ snapshots:
 
   '@aws-crypto/util@3.0.0':
     dependencies:
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       '@aws-sdk/util-utf8-browser': 3.259.0
       tslib: 1.14.1
 
   '@aws-crypto/util@5.2.0':
     dependencies:
-      '@aws-sdk/types': 3.577.0
+      '@aws-sdk/types': 3.609.0
       '@smithy/util-utf8': 2.3.0
       tslib: 2.7.0
 
@@ -2530,7 +2536,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2580,7 +2586,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2626,7 +2632,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2673,7 +2679,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2725,7 +2731,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-bucket-endpoint': 3.577.0
@@ -2787,7 +2793,7 @@ snapshots:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
       '@aws-sdk/client-sso-oidc': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2832,7 +2838,7 @@ snapshots:
     dependencies:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.582.0
       '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.577.0
@@ -2877,9 +2883,9 @@ snapshots:
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/core': 3.635.0
-      '@aws-sdk/credential-provider-node': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)
+      '@aws-sdk/credential-provider-node': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/middleware-host-header': 3.620.0
       '@aws-sdk/middleware-logger': 3.609.0
       '@aws-sdk/middleware-recursion-detection': 3.620.0
@@ -3004,7 +3010,7 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-sts@3.583.0(@aws-sdk/client-sso-oidc@3.583.0)':
+  '@aws-sdk/client-sts@3.583.0':
     dependencies:
       '@aws-crypto/sha256-browser': 3.0.0
       '@aws-crypto/sha256-js': 3.0.0
@@ -3047,7 +3053,6 @@ snapshots:
       '@smithy/util-utf8': 3.0.0
       tslib: 2.7.0
     transitivePeerDependencies:
-      - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
   '@aws-sdk/core@3.582.0':
@@ -3123,7 +3128,7 @@ snapshots:
 
   '@aws-sdk/credential-provider-ini@3.583.0(@aws-sdk/client-sso-oidc@3.583.0)(@aws-sdk/client-sts@3.583.0)':
     dependencies:
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/credential-provider-env': 3.577.0
       '@aws-sdk/credential-provider-process': 3.577.0
       '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
@@ -3138,12 +3143,12 @@ snapshots:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
-  '@aws-sdk/credential-provider-ini@3.583.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)':
+  '@aws-sdk/credential-provider-ini@3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)':
     dependencies:
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/credential-provider-env': 3.577.0
       '@aws-sdk/credential-provider-process': 3.577.0
-      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/credential-provider-web-identity': 3.577.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.577.0
       '@smithy/credential-provider-imds': 3.2.0
@@ -3155,13 +3160,13 @@ snapshots:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
-  '@aws-sdk/credential-provider-ini@3.637.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)':
+  '@aws-sdk/credential-provider-ini@3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)':
     dependencies:
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/credential-provider-env': 3.620.1
       '@aws-sdk/credential-provider-http': 3.635.0
       '@aws-sdk/credential-provider-process': 3.620.1
-      '@aws-sdk/credential-provider-sso': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/credential-provider-sso': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/credential-provider-web-identity': 3.621.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.609.0
       '@smithy/credential-provider-imds': 3.2.0
@@ -3192,13 +3197,13 @@ snapshots:
       - '@aws-sdk/client-sts'
       - aws-crt
 
-  '@aws-sdk/credential-provider-node@3.583.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)':
+  '@aws-sdk/credential-provider-node@3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)':
     dependencies:
       '@aws-sdk/credential-provider-env': 3.577.0
       '@aws-sdk/credential-provider-http': 3.582.0
-      '@aws-sdk/credential-provider-ini': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)
+      '@aws-sdk/credential-provider-ini': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/credential-provider-process': 3.577.0
-      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/credential-provider-web-identity': 3.577.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.577.0
       '@smithy/credential-provider-imds': 3.2.0
@@ -3211,13 +3216,13 @@ snapshots:
       - '@aws-sdk/client-sts'
       - aws-crt
 
-  '@aws-sdk/credential-provider-node@3.637.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)':
+  '@aws-sdk/credential-provider-node@3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)':
     dependencies:
       '@aws-sdk/credential-provider-env': 3.620.1
       '@aws-sdk/credential-provider-http': 3.635.0
-      '@aws-sdk/credential-provider-ini': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)
+      '@aws-sdk/credential-provider-ini': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/credential-provider-process': 3.620.1
-      '@aws-sdk/credential-provider-sso': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/credential-provider-sso': 3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/credential-provider-web-identity': 3.621.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.609.0
       '@smithy/credential-provider-imds': 3.2.0
@@ -3259,10 +3264,10 @@ snapshots:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
-  '@aws-sdk/credential-provider-sso@3.583.0(@aws-sdk/client-sso-oidc@3.637.0)':
+  '@aws-sdk/credential-provider-sso@3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))':
     dependencies:
       '@aws-sdk/client-sso': 3.583.0
-      '@aws-sdk/token-providers': 3.577.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/token-providers': 3.577.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/types': 3.577.0
       '@smithy/property-provider': 3.1.3
       '@smithy/shared-ini-file-loader': 3.1.4
@@ -3272,10 +3277,10 @@ snapshots:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
 
-  '@aws-sdk/credential-provider-sso@3.637.0(@aws-sdk/client-sso-oidc@3.637.0)':
+  '@aws-sdk/credential-provider-sso@3.637.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))':
     dependencies:
       '@aws-sdk/client-sso': 3.637.0
-      '@aws-sdk/token-providers': 3.614.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/token-providers': 3.614.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/types': 3.609.0
       '@smithy/property-provider': 3.1.3
       '@smithy/shared-ini-file-loader': 3.1.4
@@ -3287,7 +3292,7 @@ snapshots:
 
   '@aws-sdk/credential-provider-web-identity@3.577.0(@aws-sdk/client-sts@3.583.0)':
     dependencies:
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/types': 3.577.0
       '@smithy/property-provider': 3.1.3
       '@smithy/types': 3.3.0
@@ -3295,24 +3300,24 @@ snapshots:
 
   '@aws-sdk/credential-provider-web-identity@3.621.0(@aws-sdk/client-sts@3.583.0)':
     dependencies:
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/types': 3.609.0
       '@smithy/property-provider': 3.1.3
       '@smithy/types': 3.3.0
       tslib: 2.7.0
 
-  '@aws-sdk/credential-providers@3.583.0(@aws-sdk/client-sso-oidc@3.637.0)':
+  '@aws-sdk/credential-providers@3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))':
     dependencies:
       '@aws-sdk/client-cognito-identity': 3.583.0
       '@aws-sdk/client-sso': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
+      '@aws-sdk/client-sts': 3.583.0
       '@aws-sdk/credential-provider-cognito-identity': 3.583.0
       '@aws-sdk/credential-provider-env': 3.577.0
       '@aws-sdk/credential-provider-http': 3.582.0
-      '@aws-sdk/credential-provider-ini': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)
-      '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)(@aws-sdk/client-sts@3.583.0)
+      '@aws-sdk/credential-provider-ini': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)
+      '@aws-sdk/credential-provider-node': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/credential-provider-process': 3.577.0
-      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/credential-provider-sso': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/credential-provider-web-identity': 3.577.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.577.0
       '@smithy/credential-provider-imds': 3.2.0
@@ -3326,7 +3331,7 @@ snapshots:
   '@aws-sdk/lib-storage@3.583.0(@aws-sdk/client-s3@3.583.0)':
     dependencies:
       '@aws-sdk/client-s3': 3.583.0
-      '@smithy/abort-controller': 3.0.0
+      '@smithy/abort-controller': 3.1.1
       '@smithy/middleware-endpoint': 3.1.0
       '@smithy/smithy-client': 3.2.0
       buffer: 5.6.0
@@ -3499,7 +3504,7 @@ snapshots:
       '@smithy/types': 3.3.0
       tslib: 2.7.0
 
-  '@aws-sdk/token-providers@3.577.0(@aws-sdk/client-sso-oidc@3.637.0)':
+  '@aws-sdk/token-providers@3.577.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))':
     dependencies:
       '@aws-sdk/client-sso-oidc': 3.637.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.577.0
@@ -3508,7 +3513,7 @@ snapshots:
       '@smithy/types': 3.3.0
       tslib: 2.7.0
 
-  '@aws-sdk/token-providers@3.614.0(@aws-sdk/client-sso-oidc@3.637.0)':
+  '@aws-sdk/token-providers@3.614.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))':
     dependencies:
       '@aws-sdk/client-sso-oidc': 3.637.0(@aws-sdk/client-sts@3.583.0)
       '@aws-sdk/types': 3.609.0
@@ -3742,18 +3747,18 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@remotion/bundler@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/bundler@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/studio': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio-shared': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      css-loader: 5.2.7(webpack@5.83.1)
+      '@remotion/studio': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio-shared': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      css-loader: 5.2.7(webpack@5.83.1(esbuild@0.18.6))
       esbuild: 0.18.6
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-refresh: 0.9.0
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       source-map: 0.7.3
-      style-loader: 2.0.0(webpack@5.83.1)
+      style-loader: 2.0.0(webpack@5.83.1(esbuild@0.18.6))
       webpack: 5.83.1(esbuild@0.18.6)
     transitivePeerDependencies:
       - '@swc/core'
@@ -3763,21 +3768,21 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@remotion/cli@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/cli@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/bundler': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/media-utils': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/player': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/renderer': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio-server': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio-shared': 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      '@remotion/bundler': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/media-utils': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/player': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/renderer': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio-server': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio-shared': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       dotenv: 9.0.2
       minimist: 1.2.6
       prompts: 2.4.2
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@swc/core'
       - bufferutil
@@ -3786,31 +3791,31 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@remotion/compositor-darwin-arm64@4.0.187':
+  '@remotion/compositor-darwin-arm64@4.0.206':
     optional: true
 
-  '@remotion/compositor-darwin-x64@4.0.187':
+  '@remotion/compositor-darwin-x64@4.0.206':
     optional: true
 
-  '@remotion/compositor-linux-arm64-gnu@4.0.187':
+  '@remotion/compositor-linux-arm64-gnu@4.0.206':
     optional: true
 
-  '@remotion/compositor-linux-arm64-musl@4.0.187':
+  '@remotion/compositor-linux-arm64-musl@4.0.206':
     optional: true
 
-  '@remotion/compositor-linux-x64-gnu@4.0.187':
+  '@remotion/compositor-linux-x64-gnu@4.0.206':
     optional: true
 
-  '@remotion/compositor-linux-x64-musl@4.0.187':
+  '@remotion/compositor-linux-x64-musl@4.0.206':
     optional: true
 
-  '@remotion/compositor-win32-x64-msvc@4.0.187':
+  '@remotion/compositor-win32-x64-msvc@4.0.206':
     optional: true
 
-  '@remotion/eslint-config@4.0.187(eslint@8.57.0)(typescript@4.9.5)':
+  '@remotion/eslint-config@4.0.206(eslint@8.57.0)(typescript@4.9.5)':
     dependencies:
-      '@remotion/eslint-plugin': 4.0.187(eslint@8.57.0)(typescript@4.9.5)
-      '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@4.9.5)
+      '@remotion/eslint-plugin': 4.0.206(eslint@8.57.0)(typescript@4.9.5)
+      '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@4.9.5))(eslint@8.57.0)(typescript@4.9.5)
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@4.9.5)
       eslint: 8.57.0
       eslint-plugin-10x: 1.5.2(eslint@8.57.0)
@@ -3820,7 +3825,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@remotion/eslint-plugin@4.0.187(eslint@8.57.0)(typescript@4.9.5)':
+  '@remotion/eslint-plugin@4.0.206(eslint@8.57.0)(typescript@4.9.5)':
     dependencies:
       '@typescript-eslint/utils': 5.19.0(eslint@8.57.0)(typescript@4.9.5)
       eslint: 8.57.0
@@ -3828,31 +3833,33 @@ snapshots:
       - supports-color
       - typescript
 
-  '@remotion/fonts@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/fonts@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@remotion/lambda@4.0.187(@aws-sdk/client-sso-oidc@3.637.0)(@remotion/bundler@4.0.187)(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/lambda@4.0.206(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))(@remotion/bundler@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@aws-sdk/client-cloudwatch-logs': 3.583.0
       '@aws-sdk/client-iam': 3.583.0
       '@aws-sdk/client-lambda': 3.583.0
       '@aws-sdk/client-s3': 3.583.0
       '@aws-sdk/client-service-quotas': 3.583.0
-      '@aws-sdk/client-sts': 3.583.0(@aws-sdk/client-sso-oidc@3.583.0)
-      '@aws-sdk/credential-providers': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0)
+      '@aws-sdk/client-sts': 3.583.0
+      '@aws-sdk/credential-providers': 3.583.0(@aws-sdk/client-sso-oidc@3.637.0(@aws-sdk/client-sts@3.583.0))
       '@aws-sdk/lib-storage': 3.583.0(@aws-sdk/client-s3@3.583.0)
       '@aws-sdk/s3-request-presigner': 3.583.0
-      '@remotion/bundler': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/cli': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/renderer': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/streaming': 4.0.187
+      '@remotion/bundler': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/cli': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/renderer': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/serverless': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/streaming': 4.0.206
+      '@remotion/studio-server': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@smithy/abort-controller': 3.0.0
       mime-types: 2.1.34
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod: 3.22.3
     transitivePeerDependencies:
       - '@aws-sdk/client-sso-oidc'
@@ -3866,63 +3873,75 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@remotion/media-utils@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/media-utils@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@remotion/paths@4.0.187': {}
+  '@remotion/paths@4.0.206': {}
 
-  '@remotion/player@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/player@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@remotion/preload@4.0.187': {}
+  '@remotion/preload@4.0.206': {}
 
-  '@remotion/renderer@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/renderer@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/streaming': 4.0.187
+      '@remotion/streaming': 4.0.206
       execa: 5.1.1
       extract-zip: 2.0.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       source-map: 0.8.0-beta.0
       ws: 8.17.1
     optionalDependencies:
-      '@remotion/compositor-darwin-arm64': 4.0.187
-      '@remotion/compositor-darwin-x64': 4.0.187
-      '@remotion/compositor-linux-arm64-gnu': 4.0.187
-      '@remotion/compositor-linux-arm64-musl': 4.0.187
-      '@remotion/compositor-linux-x64-gnu': 4.0.187
-      '@remotion/compositor-linux-x64-musl': 4.0.187
-      '@remotion/compositor-win32-x64-msvc': 4.0.187
+      '@remotion/compositor-darwin-arm64': 4.0.206
+      '@remotion/compositor-darwin-x64': 4.0.206
+      '@remotion/compositor-linux-arm64-gnu': 4.0.206
+      '@remotion/compositor-linux-arm64-musl': 4.0.206
+      '@remotion/compositor-linux-x64-gnu': 4.0.206
+      '@remotion/compositor-linux-x64-musl': 4.0.206
+      '@remotion/compositor-win32-x64-msvc': 4.0.206
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@remotion/shapes@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/serverless@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/paths': 4.0.187
+      '@remotion/renderer': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/streaming': 4.0.206
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - bufferutil
+      - react
+      - react-dom
+      - supports-color
+      - utf-8-validate
+
+  '@remotion/shapes@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@remotion/paths': 4.0.206
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@remotion/streaming@4.0.187': {}
+  '@remotion/streaming@4.0.206': {}
 
-  '@remotion/studio-server@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/studio-server@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/parser': 7.24.1
-      '@remotion/bundler': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/renderer': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio-shared': 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      '@remotion/bundler': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/renderer': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio-shared': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       memfs: 3.4.3
       open: 8.4.2
       recast: 0.23.6
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       semver: 7.5.3
       source-map: 0.7.3
     transitivePeerDependencies:
@@ -3935,22 +3954,22 @@ snapshots:
       - utf-8-validate
       - webpack-cli
 
-  '@remotion/studio-shared@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/studio-shared@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@remotion/studio@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/studio@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/media-utils': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/player': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/renderer': 4.0.187(react-dom@18.3.1)(react@18.3.1)
-      '@remotion/studio-shared': 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      '@remotion/media-utils': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/player': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/renderer': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@remotion/studio-shared': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       memfs: 3.4.3
       open: 8.4.2
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       semver: 7.5.3
       source-map: 0.7.3
     transitivePeerDependencies:
@@ -3960,17 +3979,17 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@remotion/transitions@4.0.187(react-dom@18.3.1)(react@18.3.1)':
+  '@remotion/transitions@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@remotion/paths': 4.0.187
-      '@remotion/shapes': 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      '@remotion/paths': 4.0.206
+      '@remotion/shapes': 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@remotion/zod-types@4.0.187(react-dom@18.3.1)(react@18.3.1)(zod@3.22.3)':
+  '@remotion/zod-types@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(zod@3.22.3)':
     dependencies:
-      remotion: 4.0.187(react-dom@18.3.1)(react@18.3.1)
+      remotion: 4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod: 3.22.3
     transitivePeerDependencies:
       - react
@@ -4356,7 +4375,7 @@ snapshots:
       '@types/node': 22.5.0
     optional: true
 
-  '@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@4.9.5)':
+  '@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@4.9.5))(eslint@8.57.0)(typescript@4.9.5)':
     dependencies:
       '@eslint-community/regexpp': 4.11.0
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@4.9.5)
@@ -4371,6 +4390,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4383,6 +4403,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 6.21.0
       debug: 4.3.6
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4404,6 +4425,7 @@ snapshots:
       debug: 4.3.6
       eslint: 8.57.0
       ts-api-utils: 1.3.0(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4421,6 +4443,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.6.3
       tsutils: 3.21.0(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4435,6 +4458,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.6.3
       ts-api-utils: 1.3.0(typescript@4.9.5)
+    optionalDependencies:
       typescript: 4.9.5
     transitivePeerDependencies:
       - supports-color
@@ -4730,7 +4754,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-loader@5.2.7(webpack@5.83.1):
+  css-loader@5.2.7(webpack@5.83.1(esbuild@0.18.6)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.41)
       loader-utils: 2.0.4
@@ -5647,7 +5671,7 @@ snapshots:
       es-errors: 1.3.0
       set-function-name: 2.0.2
 
-  remotion@4.0.187(react-dom@18.3.1)(react@18.3.1):
+  remotion@4.0.206(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -5810,7 +5834,7 @@ snapshots:
 
   strnum@1.0.5: {}
 
-  style-loader@2.0.0(webpack@5.83.1):
+  style-loader@2.0.0(webpack@5.83.1(esbuild@0.18.6)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
@@ -5828,15 +5852,16 @@ snapshots:
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.10(esbuild@0.18.6)(webpack@5.83.1):
+  terser-webpack-plugin@5.3.10(esbuild@0.18.6)(webpack@5.83.1(esbuild@0.18.6)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      esbuild: 0.18.6
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.31.6
       webpack: 5.83.1(esbuild@0.18.6)
+    optionalDependencies:
+      esbuild: 0.18.6
 
   terser@5.31.6:
     dependencies:
@@ -5967,7 +5992,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(esbuild@0.18.6)(webpack@5.83.1)
+      terser-webpack-plugin: 5.3.10(esbuild@0.18.6)(webpack@5.83.1(esbuild@0.18.6))
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:

@@ -25,5 +25,5 @@ pnpm build
 **Upgrade Remotion**
 
 ```console
-pnpm run upgrade
+pnpm exec remotion upgrade
 ```
