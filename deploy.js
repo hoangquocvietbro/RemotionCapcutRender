@@ -9,7 +9,8 @@ async function deploy() {
 		region: process.env.AWS_REGION || "us-east-1",
 		timeoutInSeconds: Number(process.env.TIMEOUT || 120),
 		memorySizeInMb: 2048,
-		createCloudWatchLogGroup: true
+		createCloudWatchLogGroup: true,
+		enableV5Runtime: true
 	});
 	console.log("functionName :",functionName)
 
