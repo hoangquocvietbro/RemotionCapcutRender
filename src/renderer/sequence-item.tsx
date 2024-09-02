@@ -180,8 +180,8 @@ export const SequenceItem: Record<
           borderRadius: item?.details?.borderRadius || '0', // Default border radius
           boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
           filter: item.details.filter || 'none',
-          top: "-2368.78px",// Item?.details?.top || 0,
-          left: "-1200.747px",// Item?.details?.left || 0,
+          top: item?.details?.top || 0,
+          left: item?.details?.left || 0,
         }}
       >
         <div style={{ pointerEvents: 'none' }}>
