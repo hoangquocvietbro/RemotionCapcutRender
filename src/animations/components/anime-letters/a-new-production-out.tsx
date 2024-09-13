@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { spanLetters } from '../../utils/span-letters';
 
@@ -20,7 +20,6 @@ const ANewProductionOut: React.FC<AnimatedLettersProps> = ({
   id,
 }) => {
   useEffect(() => {
-    console.log('new production out', document.querySelector('.ml37'));
     spanLetters('ml37');
     timeLine
       .add(

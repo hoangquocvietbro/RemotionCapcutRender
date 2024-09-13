@@ -53,7 +53,7 @@ const BlockRevealInAnimation: React.FC<AnimatedLetterProps> = ({
   return (
     <div className="containerAnimation">
       <div className="ml22" id={id}>
-        <div className="ml22_block" />
+        <div className="ml22_block"></div>
         {children}
       </div>
     </div>

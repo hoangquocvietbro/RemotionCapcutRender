@@ -1,6 +1,6 @@
 import { AbsoluteFill, Audio, Img, OffthreadVideo } from 'remotion';
 import { TransitionSeries } from '@remotion/transitions';
-import { ITrackItem, ItemType } from '../core/types';
+import { IAnimationType, ITrackItem, ItemType } from '../core/types';
 import { clamp } from '../core/scene';
 import MainLayerBackground from './main-layer-background';
 import { Animations } from '../animations';
@@ -30,7 +30,7 @@ const calculateFrames = (
 };
 
 const applyAnimation = (animation: any, children: React.ReactNode, timeLine: Timeline, item: ITrackItem) => {
-  return Animations[animation.name]({
+  return Animations[animation.name as IAnimationType]({
     timeLine,
     from: item.display.from,
     to: item.display.to,
@@ -47,10 +47,10 @@ export const TransitionSequenceItem: Record<
   text: (item: ITrackItem, options: SequenceItemOptions) => {
     const { fps, timeLine } = options;
     const animation = item.animation || {};
+
     const inAnimation = animation.in;
     const outAnimation = animation.out;
     const { durationInFrames } = calculateFrames(item.display, fps);
-
     const textLayers = (
       <TextLayer
         key={item.id}
@@ -107,13 +107,18 @@ export const TransitionSequenceItem: Record<
     );
   },
   image: (item: ITrackItem, options: SequenceItemOptions) => {
-    // https://placehold.co/600x400
-    const src = item.details.src!;
     const { fps, timeLine } = options;
     const animation = item.animation || {};
     const inAnimation = animation.in;
     const outAnimation = animation.out;
     const { durationInFrames } = calculateFrames(item.display, fps);
+    const crop = item.details?.crop || {
+      x: 0,
+      y: 0,
+      width: item.details.width,
+      height: item.details.height,
+    };
+
     const imageLayer = (
       <AbsoluteFill
         data-track-item="transition-element"
@@ -121,21 +126,39 @@ export const TransitionSequenceItem: Record<
           pointerEvents: 'auto',
           top: item?.details?.top || 0,
           left: item?.details?.left || 0,
-          width: item.details.width || '100%', // Default width
-          height: item.details.height || 'auto', // Default height
+          width: crop.width || '100%', // Default width
+          height: crop.height || 'auto', // Default height
           transform: item.details?.transform || 'none',
           opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
           border: item?.details?.border || 'none', // Default border
           borderRadius: item?.details?.borderRadius || '0', // Default border radius
           boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+          overflow: 'hidden',
         }}
         className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
       >
-        <Img
-          style={{ pointerEvents: 'none' }}
-          data-id={item.id}
-          src={src}
-        />
+        <div
+          style={{
+            width: item.details.width || '100%', // Default width
+            height: item.details.height || 'auto', // Default height
+            position: 'relative',
+            overflow: 'hidden',
+            pointerEvents: 'none',
+          }}
+        >
+          <Img
+            style={{
+              pointerEvents: 'none',
+              left: crop?.x ? -crop.x : 0,
+              top: crop?.y ? -crop.y : 0,
+              width: item.details.width || '100%', // Default width
+              height: item.details.height || 'auto', // Default height
+              position: 'absolute',
+            }}
+            data-id={item.id}
+            src={item.details.src!}
+          />
+        </div>
       </AbsoluteFill>
     );
     let content = imageLayer;
@@ -151,7 +174,6 @@ export const TransitionSequenceItem: Record<
     } else if (outAnimation) {
       content = applyAnimation(outAnimation, imageLayer, timeLine, item);
     }
-
     return (
       <TransitionSeries.Sequence
         key={item.id}
@@ -171,8 +193,13 @@ export const TransitionSequenceItem: Record<
     const { fps } = options;
     const { durationInFrames } = calculateFrames(item.display, fps);
     const trim = item.trim!;
-    // https://placehold.co/600x400
-    const src = item.details.src!;
+
+    const crop = item.details?.crop || {
+      x: 0,
+      y: 0,
+      width: item.details.width,
+      height: item.details.height,
+    };
 
     return (
       <TransitionSeries.Sequence
@@ -191,23 +218,41 @@ export const TransitionSequenceItem: Record<
             pointerEvents: 'auto',
             top: item?.details?.top || 0,
             left: item?.details?.left || 0,
-            width: item.details.width || '100%', // Default width
-            height: item.details.height || 'auto', // Default height
+            width: crop.width || '100%', // Default width
+            height: crop.height || 'auto', // Default height
             transform: item.details?.transform || 'none',
             opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
             border: item?.details?.border || 'none', // Default border
             borderRadius: item?.details?.borderRadius || '0', // Default border radius
             boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+            overflow: 'hidden',
           }}
           className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
         >
-          <OffthreadVideo
-            startFrom={(trim.from / 1000) * fps}
-            endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
-            src={src}
-            volume={()=>clamp(0, 100, item?.details?.volume)}
-            style={{ pointerEvents: 'none' }}
-          />
+          <div
+            style={{
+              width: item.details.width || '100%', // Default width
+              height: item.details.height || 'auto', // Default height
+              position: 'relative',
+              overflow: 'hidden',
+              pointerEvents: 'none',
+            }}
+          >
+            <OffthreadVideo
+              startFrom={(trim.from / 1000) * fps}
+              endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
+              src={item.details.src!}
+              volume={()=>clamp(0, 100, item?.details?.volume)}
+              style={{
+                pointerEvents: 'none',
+                left: crop?.x ? -crop.x : 0,
+                top: crop?.y ? -crop.y : 0,
+                width: item.details.width || '100%', // Default width
+                height: item.details.height || 'auto', // Default height
+                position: 'absolute',
+              }}
+            />
+          </div>
         </AbsoluteFill>
       </TransitionSeries.Sequence>
     );

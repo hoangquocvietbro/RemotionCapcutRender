@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 
 interface AnimatedLettersProps {
@@ -18,7 +18,6 @@ const PopOut: React.FC<AnimatedLettersProps> = ({
   useEffect(() => {
     const timeFrom = (from / 30) * 1000;
     const timeTo = (to / 30) * 1000;
-    console.log(timeFrom, timeTo);
     timeLine
       .add(
         '.ml57 .cube',

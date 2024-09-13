@@ -9,6 +9,9 @@ interface AnimatedLetterProps {
   to: number;
   children: React.ReactNode;
   id: string;
+  diffTimeInit?: number;
+  diffTimeEnd?: number;
+  currentTime?: number;
 }
 
 const TumbleInAnimation: React.FC<AnimatedLetterProps> = ({
@@ -17,6 +20,9 @@ const TumbleInAnimation: React.FC<AnimatedLetterProps> = ({
   to,
   children,
   id,
+  diffTimeInit,
+  diffTimeEnd,
+  currentTime,
 }) => {
   useEffect(() => {
     timeLine.add(
@@ -29,6 +35,9 @@ const TumbleInAnimation: React.FC<AnimatedLetterProps> = ({
         ease: 'outExpo',
         duration: 1000,
         delay: (el, i) => 70 * i + from,
+        diffTimeInit,
+        diffTimeEnd,
+        currentTime,
       },
       0,
     );
@@ -36,10 +45,11 @@ const TumbleInAnimation: React.FC<AnimatedLetterProps> = ({
 
   return (
     <div>
-      <div className="ml23" id={id}>{children}</div>
+      <div className="ml23" id={id}>
+        {children}
+      </div>
     </div>
   );
 };
 
 export default TumbleInAnimation;
-

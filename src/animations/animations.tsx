@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timeline } from '../../../lib/anime/timeline';
+import { Timeline } from '../lib/anime/timeline';
 import {
   ANewProductionIn,
   ANewProductionOut,
@@ -38,7 +38,7 @@ import {
   WipeOut,
   ZoomIn,
 } from './components';
-import { IAnimationType } from '../../timeline/timeline-manager/interfaces';
+import { IAnimationType } from '../core/types';
 
 interface AnimatedLetterProps {
   timeLine: Timeline;
@@ -46,6 +46,9 @@ interface AnimatedLetterProps {
   to: number;
   children?: React.ReactNode;
   id: string;
+  diffTimeInit?: number;
+  diffTimeEnd?: number;
+  currentTime?: number;
 }
 
 const animationComponents: Record<
@@ -92,8 +95,25 @@ const animationComponents: Record<
 
 const createAnimationComponent =
   (Component: React.ComponentType<AnimatedLetterProps>) =>
-  ({ from, to, timeLine, children, id }: AnimatedLetterProps) => (
-    <Component timeLine={timeLine} from={from} to={to} id={id}>
+  ({
+    from,
+    to,
+    timeLine,
+    children,
+    id,
+    diffTimeInit,
+    diffTimeEnd,
+    currentTime,
+  }: AnimatedLetterProps) => (
+    <Component
+      timeLine={timeLine}
+      from={from}
+      to={to}
+      id={id}
+      diffTimeEnd={diffTimeEnd}
+      diffTimeInit={diffTimeInit}
+      currentTime={currentTime}
+    >
       {children}
     </Component>
   );

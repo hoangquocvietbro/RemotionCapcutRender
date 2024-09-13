@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { spanLetters } from '../../utils/span-letters';
 interface AnimatedLettersProps {
@@ -19,10 +19,6 @@ const HelloGoodbye: React.FC<AnimatedLettersProps> = ({
   id,
 }) => {
   useEffect(() => {
-    console.log(
-      document.querySelector('.ml11 .ml11_letters').getBoundingClientRect()
-        .width,
-    );
     spanLetters('ml11_letters');
 
     timeLine

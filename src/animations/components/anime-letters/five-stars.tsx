@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { FaStar } from 'react-icons/fa';
 import { RiSingleQuotesL } from 'react-icons/ri';

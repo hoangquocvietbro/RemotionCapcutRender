@@ -8,6 +8,9 @@ interface AnimatedLetterProps {
   to: number;
   children: React.ReactNode;
   id: string;
+  diffTimeInit?: number;
+  diffTimeEnd?: number;
+  currentTime?: number;
 }
 const FadeOutAnimation: React.FC<AnimatedLetterProps> = ({
   timeLine,
@@ -15,6 +18,9 @@ const FadeOutAnimation: React.FC<AnimatedLetterProps> = ({
   to,
   children,
   id,
+  diffTimeInit,
+  diffTimeEnd,
+  currentTime,
 }) => {
   useEffect(() => {
     timeLine.add(
@@ -25,6 +31,9 @@ const FadeOutAnimation: React.FC<AnimatedLetterProps> = ({
         ease: 'inOutQuint',
         duration: 1400,
         delay: to - 1500,
+        diffTimeInit,
+        diffTimeEnd,
+        currentTime,
       },
       0,
     );

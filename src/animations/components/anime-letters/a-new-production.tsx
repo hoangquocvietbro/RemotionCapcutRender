@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { spanLetters } from '../../utils/span-letters';
 
@@ -20,7 +20,6 @@ const ANewProduction: React.FC<AnimatedLettersProps> = ({
   useEffect(() => {
     const timeFrom = (from / 30) * 1000;
     const timeTo = (to / 30) * 1000;
-    console.log(timeFrom, timeTo);
     spanLetters('ml12');
     timeLine
       .add(

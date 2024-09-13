@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { spanLetters } from '../../utils/span-letters';
 import { BiSolidQuoteAltRight } from 'react-icons/bi';

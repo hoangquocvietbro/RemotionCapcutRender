@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Timeline } from '../../../../../lib/anime/anime';
+import { Timeline } from '../../../lib/anime/anime';
 import '../style.css';
 import { CgShapeCircle } from 'react-icons/cg';
 import { ImCross } from 'react-icons/im';
