@@ -303,7 +303,7 @@ export const SequenceItem: Record<
           top: item?.details?.top || 0,
           left: item?.details?.left || 0,
           overflow: 'hidden',
-          transformOrigin: item?.details?.transformOrigin || 'top left',
+          transformOrigin: item?.details?.transformOrigin || 'center center',
         }}
       >
         {item.isMain && (
@@ -314,8 +314,8 @@ export const SequenceItem: Record<
             pointerEvents: 'none',
             width: item.details.width,
             height: item.details.height,
-            left: crop?.x ? -crop.x : 0,
-            top: crop?.y ? -crop.y : 0,
+            top: -crop.y,
+            left: -crop.x,
           }}
         >
           <OffthreadVideo
