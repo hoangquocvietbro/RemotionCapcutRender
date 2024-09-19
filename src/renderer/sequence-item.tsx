@@ -181,26 +181,45 @@ export const SequenceItem: Record<
 
     const imageLayer = (
       <AbsoluteFill
+        className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
         style={{
-          pointerEvents: 'none',
-          position: 'relative',
-          width: item.details.width || '100%',
-          height: item.details.height || 'auto',
-          left: crop?.x ? -crop.x : 0,
-          top: crop?.y ? -crop.y : 0,
-          objectFit: 'cover',
+
+          pointerEvents: 'auto',
+          top: item?.details?.top || 0,
+          left: item?.details?.left || 0,
+          width: crop.width || '100%', // Default width
+          height: crop.height || 'auto', // Default height
+          transform: item.details?.transform || 'none',
+          opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
+          border: item?.details?.border || 'none', // Default border
+          borderRadius: item?.details?.borderRadius || '0', // Default border radius
+          boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+          overflow: 'hidden',
+          transformOrigin: item?.details?.transformOrigin || 'center center',
         }}
       >
-        <Img
+        <div
           style={{
+            width: item.details.width || '100%', // Default width
+            height: item.details.height || 'auto', // Default height
+            position: 'relative',
+            overflow: 'hidden',
             pointerEvents: 'none',
-            height: '100%',
-            width: '100%',
-            objectFit: 'cover',
           }}
-          data-id={item.id}
-          src={item.details.src!}
-        />
+        >
+          <Img
+            style={{
+              pointerEvents: 'none',
+              top: -crop.y || 0,
+              left: -crop.x || 0,
+              width: item.details.width || '100%', // Default width
+              height: item.details.height || 'auto', // Default height
+              position: 'absolute',
+            }}
+            data-id={item.id}
+            src={item.details.src!}
+          />
+        </div>
       </AbsoluteFill>
     );
 
@@ -247,33 +266,21 @@ export const SequenceItem: Record<
 
     return (
       <>
-        {item.isMain && (
-          <MainLayerBackground
-            key={item.id + 'background'}
-            background={item.details.background}
-          />
-        )}
+
         <Sequence
+
           key={item.id}
-          className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
           from={from}
           durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
-          style={{
-            width: crop.width || '100%', // Default width
-            height: crop.height || 'auto', // Default height
-            transform: item.details?.transform || 'none',
-            opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
-            border: item?.details?.border || 'none', // Default border
-            borderRadius: item?.details?.borderRadius || '0', // Default border radius
-            boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
-            filter: item.details.filter || 'none',
-            top: item?.details?.top || 0,
-            left: item?.details?.left || 0,
-            transformOrigin: item?.details?.transformOrigin || 'center center',
-            overflow: 'hidden',
-          }}
+          style={{ pointerEvents: 'auto' }}
         >
-          <div style={{ pointerEvents: 'none' }}>{content}</div>
+          {item.isMain && (
+            <MainLayerBackground
+              key={item.id + 'background'}
+              background={item.details.background}
+            />
+          )}
+          {content}
         </Sequence>
       </>
     );
@@ -290,54 +297,60 @@ export const SequenceItem: Record<
     };
     return (
       <>
-        {item.isMain && (
-          <MainLayerBackground
-            key={item.id + 'background'}
-            background={item.details.background}
-          />
-        )}
+
         <Sequence
           key={item.id}
-          className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
           from={from}
           durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
-          style={{
-            // width: item.details.crop?.width || item.details.width || '100%', // Default width
-            // height: item.details.crop?.height || item.details.height || 'auto', // Default height
-            width: crop.width || '100%', // Default width
-            height: crop.height || 'auto', // Default height
-            transform: item.details?.transform || 'none',
-            opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
-            border: item?.details?.border || 'none', // Default border
-            borderRadius: item?.details?.borderRadius || '0', // Default border radius
-            boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
-            top: item?.details?.top || 0,
-            left: item?.details?.left || 0,
-            overflow: 'hidden',
-            transformOrigin: item?.details?.transformOrigin || 'center center',
-          }}
+          style={{ pointerEvents: 'auto' }}
         >
+          {item.isMain && (
+            <MainLayerBackground
+              key={item.id + 'background'}
+              background={item.details.background}
+            />
+          )}
           <AbsoluteFill
+            className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
             style={{
-              position: 'relative',
-              pointerEvents: 'none',
-              width: item.details.width,
-              height: item.details.height,
-              top: -crop.y,
-              left: -crop.x,
+              pointerEvents: 'auto',
+              top: item?.details?.top || 0,
+              left: item?.details?.left || 0,
+              width: crop.width || '100%', // Default width
+              height: crop.height || 'auto', // Default height
+              transform: item.details?.transform || 'none',
+              opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
+              border: item?.details?.border || 'none', // Default border
+              borderRadius: item?.details?.borderRadius || '0', // Default border radius
+              boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+              overflow: 'hidden',
+              transformOrigin: item?.details?.transformOrigin || 'center center',
             }}
           >
-            <OffthreadVideo
-              startFrom={(trim.from / 1000) * fps}
-              endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
-              src={item.details.src!}
-              volume={()=>clamp(0, 100, item?.details?.volume)}
+            <div
               style={{
+                width: item.details.width || '100%', // Default width
+                height: item.details.height || 'auto', // Default height
+                position: 'relative',
+                overflow: 'hidden',
                 pointerEvents: 'none',
-                width: item.details.width,
-                height: item.details.height,
               }}
-            />
+            >
+              <OffthreadVideo
+                startFrom={(trim.from / 1000) * fps}
+                endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
+                src={item.details.src!}
+                volume={()=>clamp(0, 100, item?.details?.volume)}
+                style={{
+                  pointerEvents: 'none',
+                  top: -crop.y || 0,
+                  left: -crop.x || 0,
+                  width: item.details.width || '100%', // Default width
+                  height: item.details.height || 'auto', // Default height
+                  position: 'absolute',
+                }}
+              />
+            </div>
           </AbsoluteFill>
         </Sequence>
       </>
