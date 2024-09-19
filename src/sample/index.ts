@@ -5,14 +5,6 @@ export const design: Design = {
   trackItemsMap: {},
   transitionIds: [],
   transitionsMap: {},
-  tracks: [
-    {
-      id: "main",
-      type: "main",
-      items: [],
-      accepts: ["video", "image"],
-    },
-  ],
   size: {
     width: 1920,
     height: 1080,

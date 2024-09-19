@@ -134,6 +134,7 @@ export const TransitionSequenceItem: Record<
           borderRadius: item?.details?.borderRadius || '0', // Default border radius
           boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
           overflow: 'hidden',
+          transformOrigin: item?.details?.transformOrigin || 'center center',
         }}
         className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
       >
@@ -149,8 +150,8 @@ export const TransitionSequenceItem: Record<
           <Img
             style={{
               pointerEvents: 'none',
-              left: crop?.x ? -crop.x : 0,
-              top: crop?.y ? -crop.y : 0,
+              top: -crop.y || 0,
+              left: -crop.x || 0,
               width: item.details.width || '100%', // Default width
               height: item.details.height || 'auto', // Default height
               position: 'absolute',
@@ -183,7 +184,10 @@ export const TransitionSequenceItem: Record<
         }}
       >
         {item.isMain && (
-          <MainLayerBackground background={item.details.background} />
+          <MainLayerBackground
+            key={item.id + 'background'}
+            background={item.details.background}
+          />
         )}
         {content}
       </TransitionSeries.Sequence>
@@ -210,7 +214,10 @@ export const TransitionSequenceItem: Record<
         }}
       >
         {item.isMain && (
-          <MainLayerBackground background={item.details.background} />
+          <MainLayerBackground
+            key={item.id + 'background'}
+            background={item.details.background}
+          />
         )}
         <AbsoluteFill
           data-track-item="transition-element"

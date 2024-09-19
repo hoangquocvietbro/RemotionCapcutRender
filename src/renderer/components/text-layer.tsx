@@ -15,15 +15,16 @@ const TextLayer: React.FC<{
   return (
     <div
       ref={divRef}
-      dangerouslySetInnerHTML={{ __html: content }}
       data-text-id={id}
+      dangerouslySetInnerHTML={{ __html: content }}
       contentEditable={false}
       style={{
-        width: '100%',
         height: '100%',
         boxShadow: 'none',
         outline: 'none',
         ...style,
+        whiteSpace: 'normal',
+        width: '100%',
       }}
       className="designcombo_textLayer"
     />

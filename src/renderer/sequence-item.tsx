@@ -159,7 +159,7 @@ export const SequenceItem: Record<
             pointerEvents: 'auto',
           }}
         >
-          <div style={{ pointerEvents: 'none' }}>{content}</div>
+          <div style={{ pointerEvents: 'none', width: '100%' }}>{content}</div>
         </Sequence>
       );
   },
@@ -183,6 +183,7 @@ export const SequenceItem: Record<
       <AbsoluteFill
         style={{
           pointerEvents: 'none',
+          position: 'relative',
           width: item.details.width || '100%',
           height: item.details.height || 'auto',
           left: crop?.x ? -crop.x : 0,
@@ -245,33 +246,36 @@ export const SequenceItem: Record<
     }
 
     return (
-      <Sequence
-        key={item.id}
-        className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
-        from={from}
-        durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
-        style={{
-          width: crop.width || '100%', // Default width
-          height: crop.height || 'auto', // Default height
-          transform: item.details?.transform || 'none',
-          opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
-          border: item?.details?.border || 'none', // Default border
-          borderRadius: item?.details?.borderRadius || '0', // Default border radius
-          boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
-          filter: item.details.filter || 'none',
-          top: item?.details?.top || 0,
-          left: item?.details?.left || 0,
-          transformOrigin: item?.details?.transformOrigin || 'top left',
-          overflow: 'hidden',
-        }}
-      >
-        <div style={{ pointerEvents: 'none' }}>
-          {item.isMain && (
-            <MainLayerBackground background={item.details.background} />
-          )}
-          {content}
-        </div>
-      </Sequence>
+      <>
+        {item.isMain && (
+          <MainLayerBackground
+            key={item.id + 'background'}
+            background={item.details.background}
+          />
+        )}
+        <Sequence
+          key={item.id}
+          className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
+          from={from}
+          durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
+          style={{
+            width: crop.width || '100%', // Default width
+            height: crop.height || 'auto', // Default height
+            transform: item.details?.transform || 'none',
+            opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
+            border: item?.details?.border || 'none', // Default border
+            borderRadius: item?.details?.borderRadius || '0', // Default border radius
+            boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+            filter: item.details.filter || 'none',
+            top: item?.details?.top || 0,
+            left: item?.details?.left || 0,
+            transformOrigin: item?.details?.transformOrigin || 'center center',
+            overflow: 'hidden',
+          }}
+        >
+          <div style={{ pointerEvents: 'none' }}>{content}</div>
+        </Sequence>
+      </>
     );
   },
   video: (item: ITrackItem, options: SequenceItemOptions) => {
@@ -285,52 +289,58 @@ export const SequenceItem: Record<
       height: item.details.height,
     };
     return (
-      <Sequence
-        key={item.id}
-        className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
-        from={from}
-        durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
-        style={{
-          // width: item.details.crop?.width || item.details.width || '100%', // Default width
-          // height: item.details.crop?.height || item.details.height || 'auto', // Default height
-          width: crop.width || '100%', // Default width
-          height: crop.height || 'auto', // Default height
-          transform: item.details?.transform || 'none',
-          opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
-          border: item?.details?.border || 'none', // Default border
-          borderRadius: item?.details?.borderRadius || '0', // Default border radius
-          boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
-          top: item?.details?.top || 0,
-          left: item?.details?.left || 0,
-          overflow: 'hidden',
-          transformOrigin: item?.details?.transformOrigin || 'center center',
-        }}
-      >
+      <>
         {item.isMain && (
-          <MainLayerBackground background={item.details.background} />
+          <MainLayerBackground
+            key={item.id + 'background'}
+            background={item.details.background}
+          />
         )}
-        <AbsoluteFill
+        <Sequence
+          key={item.id}
+          className={`designcombo-scene-item id-${item.id} designcombo-scene-item-type-${item.type}`}
+          from={from}
+          durationInFrames={durationInFrames + REMOTION_SAFE_FRAME}
           style={{
-            pointerEvents: 'none',
-            width: item.details.width,
-            height: item.details.height,
-            top: -crop.y,
-            left: -crop.x,
+            // width: item.details.crop?.width || item.details.width || '100%', // Default width
+            // height: item.details.crop?.height || item.details.height || 'auto', // Default height
+            width: crop.width || '100%', // Default width
+            height: crop.height || 'auto', // Default height
+            transform: item.details?.transform || 'none',
+            opacity: item?.details?.opacity ? item.details.opacity / 100 : 1,
+            border: item?.details?.border || 'none', // Default border
+            borderRadius: item?.details?.borderRadius || '0', // Default border radius
+            boxShadow: item?.details?.boxShadow || 'none', // Default box shadow
+            top: item?.details?.top || 0,
+            left: item?.details?.left || 0,
+            overflow: 'hidden',
+            transformOrigin: item?.details?.transformOrigin || 'center center',
           }}
         >
-          <OffthreadVideo
-            startFrom={(trim.from / 1000) * fps}
-            endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
-            src={item.details.src!}
-            volume={()=>clamp(0, 100, item?.details?.volume)}
+          <AbsoluteFill
             style={{
+              position: 'relative',
               pointerEvents: 'none',
               width: item.details.width,
               height: item.details.height,
+              top: -crop.y,
+              left: -crop.x,
             }}
-          />
-        </AbsoluteFill>
-      </Sequence>
+          >
+            <OffthreadVideo
+              startFrom={(trim.from / 1000) * fps}
+              endAt={(trim.to / 1000) * fps + REMOTION_SAFE_FRAME}
+              src={item.details.src!}
+              volume={()=>clamp(0, 100, item?.details?.volume)}
+              style={{
+                pointerEvents: 'none',
+                width: item.details.width,
+                height: item.details.height,
+              }}
+            />
+          </AbsoluteFill>
+        </Sequence>
+      </>
     );
   },
   audio: (item: ITrackItem, options: SequenceItemOptions) => {
