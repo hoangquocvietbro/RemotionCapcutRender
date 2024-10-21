@@ -1,9 +1,3 @@
 {
-	"extends": "@remotion",
-	"rules": {
-		"react/prefer-read-only-props": "off",
-    "react/require-default-props": "off",
-		"@typescript-eslint/no-explicit-any": "off",
-		"complexity": ["warn", 40]
-  }
+  "extends": "@remotion"
 }

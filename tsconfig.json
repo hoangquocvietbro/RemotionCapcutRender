@@ -3,13 +3,15 @@
     "target": "ES2018",
     "module": "commonjs",
     "jsx": "react-jsx",
-    "outDir": "./dist",
     "strict": true,
     "noEmit": true,
-    "lib": ["es2015"],
+    "lib": ["es2017"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true
-  }
+    "noUnusedLocals": true,
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["remotion.config.ts"]
 }
