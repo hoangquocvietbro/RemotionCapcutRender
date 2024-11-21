@@ -9,7 +9,7 @@ export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="MoonShine"
+				id="RenderVideo"
 				component={RenderVideo}
 				durationInFrames={300}
 				fps={FPS}
