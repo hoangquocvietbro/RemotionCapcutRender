@@ -1,0 +1,300 @@
+{
+  "id": "bCEsiQ6QDAQWceQ5",
+  "fps": 30,
+  "tracks": [
+    {
+      "id": "NVedZJ4HIKtItVp5XF95T",
+      "accepts": [
+        "text",
+        "audio",
+        "helper",
+        "video",
+        "image",
+        "caption",
+        "template"
+      ],
+      "type": "text",
+      "items": ["artOoR7Ib6o6IPMh"],
+      "magnetic": false,
+      "static": false
+    },
+    {
+      "id": "4s0zEvBVwl4w4Y4lSuKdU",
+      "accepts": [
+        "text",
+        "audio",
+        "helper",
+        "video",
+        "image",
+        "caption",
+        "template"
+      ],
+      "type": "video",
+      "items": ["tQd94oyAWZvdg4ME", "nwLEXIPkYJZ1WSD"],
+      "magnetic": false,
+      "static": false
+    }
+  ],
+  "size": {
+    "width": 1920,
+    "height": 1080
+  },
+  "trackItemDetailsMap": {
+    "tQd94oyAWZvdg4ME": {
+      "type": "video",
+      "details": {
+        "width": 640,
+        "height": 360,
+        "opacity": 100,
+        "src": "https://cdn.designcombo.dev/videos/5s-timer-black.mp4",
+        "volume": 100,
+        "borderRadius": 0,
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#000000",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        },
+        "top": "360px",
+        "left": "640px",
+        "transform": "scale(3)",
+        "blur": 0,
+        "brightness": 100,
+        "flipX": false,
+        "flipY": false,
+        "rotate": "0deg",
+        "visibility": "visible"
+      },
+      "metadata": {
+        "previewUrl": "https://cdn.designcombo.dev/thumbnails/5s-timer-black.png"
+      }
+    },
+    "nwLEXIPkYJZ1WSD": {
+      "type": "video",
+      "details": {
+        "width": 1280,
+        "height": 720,
+        "opacity": 100,
+        "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+        "volume": 100,
+        "borderRadius": 0,
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#000000",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        },
+        "top": "180px",
+        "left": "320px",
+        "transform": "scale(1.5)",
+        "blur": 0,
+        "brightness": 100,
+        "flipX": false,
+        "flipY": false,
+        "rotate": "0deg",
+        "visibility": "visible"
+      },
+      "metadata": {
+        "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+      }
+    },
+    "artOoR7Ib6o6IPMh": {
+      "type": "text",
+      "details": {
+        "fontFamily": "Roboto-Bold",
+        "fontSize": 120,
+        "fontWeight": "normal",
+        "fontStyle": "normal",
+        "textDecoration": "none",
+        "textAlign": "center",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "wordSpacing": "normal",
+        "color": "#ffffff",
+        "backgroundColor": "transparent",
+        "border": "none",
+        "textShadow": "none",
+        "text": "Heading and some body",
+        "opacity": 100,
+        "width": 1327,
+        "wordWrap": "break-word",
+        "wordBreak": "normal",
+        "WebkitTextStrokeColor": "#ffffff",
+        "WebkitTextStrokeWidth": "0px",
+        "top": "101.025px",
+        "left": "350.884px",
+        "textTransform": "none",
+        "transform": "none",
+        "skewX": 0,
+        "skewY": 0,
+        "height": 140,
+        "fontUrl": "https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlvAx05IsDqlA.ttf",
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#ffffff",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        }
+      }
+    }
+  },
+  "trackItemIds": ["nwLEXIPkYJZ1WSD", "tQd94oyAWZvdg4ME", "artOoR7Ib6o6IPMh"],
+  "transitionsMap": {
+    "tQd94oyAWZvdg4ME-nwLEXIPkYJZ1WSD": {
+      "id": "tQd94oyAWZvdg4ME-nwLEXIPkYJZ1WSD",
+      "duration": 1500,
+      "fromId": "tQd94oyAWZvdg4ME",
+      "toId": "nwLEXIPkYJZ1WSD",
+      "kind": "slide",
+      "trackId": "4s0zEvBVwl4w4Y4lSuKdU",
+      "type": "transition",
+      "direction": "from-right"
+    }
+  },
+  "trackItemsMap": {
+    "tQd94oyAWZvdg4ME": {
+      "id": "tQd94oyAWZvdg4ME",
+      "metadata": {
+        "previewUrl": "https://cdn.designcombo.dev/thumbnails/5s-timer-black.png"
+      },
+      "trim": {
+        "from": 0,
+        "to": 5010
+      },
+      "type": "video",
+      "name": "video",
+      "playbackRate": 1,
+      "display": {
+        "from": 0,
+        "to": 5010
+      },
+      "duration": 5010,
+      "isMain": false,
+      "details": {
+        "width": 640,
+        "height": 360,
+        "opacity": 100,
+        "src": "https://cdn.designcombo.dev/videos/5s-timer-black.mp4",
+        "volume": 100,
+        "borderRadius": 0,
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#000000",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        },
+        "top": "360px",
+        "left": "640px",
+        "transform": "scale(3)",
+        "blur": 0,
+        "brightness": 100,
+        "flipX": false,
+        "flipY": false,
+        "rotate": "0deg",
+        "visibility": "visible"
+      }
+    },
+    "nwLEXIPkYJZ1WSD": {
+      "id": "nwLEXIPkYJZ1WSD",
+      "metadata": {
+        "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+      },
+      "trim": {
+        "from": 0,
+        "to": 12000
+      },
+      "type": "video",
+      "name": "video",
+      "playbackRate": 1,
+      "display": {
+        "from": 5010,
+        "to": 17010
+      },
+      "duration": 12000,
+      "isMain": false,
+      "details": {
+        "width": 1280,
+        "height": 720,
+        "opacity": 100,
+        "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+        "volume": 100,
+        "borderRadius": 0,
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#000000",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        },
+        "top": "180px",
+        "left": "320px",
+        "transform": "scale(1.5)",
+        "blur": 0,
+        "brightness": 100,
+        "flipX": false,
+        "flipY": false,
+        "rotate": "0deg",
+        "visibility": "visible"
+      }
+    },
+    "artOoR7Ib6o6IPMh": {
+      "id": "artOoR7Ib6o6IPMh",
+      "name": "text",
+      "type": "text",
+      "display": {
+        "from": 1702.1276595744682,
+        "to": 6702.127659574468
+      },
+      "metadata": {},
+      "isMain": false,
+      "details": {
+        "fontFamily": "Roboto-Bold",
+        "fontSize": 120,
+        "fontWeight": "normal",
+        "fontStyle": "normal",
+        "textDecoration": "none",
+        "textAlign": "center",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "wordSpacing": "normal",
+        "color": "#ffffff",
+        "backgroundColor": "transparent",
+        "border": "none",
+        "textShadow": "none",
+        "text": "Heading and some body",
+        "opacity": 100,
+        "width": 1327,
+        "wordWrap": "break-word",
+        "wordBreak": "normal",
+        "WebkitTextStrokeColor": "#ffffff",
+        "WebkitTextStrokeWidth": "0px",
+        "top": "101.025px",
+        "left": "350.884px",
+        "textTransform": "none",
+        "transform": "none",
+        "skewX": 0,
+        "skewY": 0,
+        "height": 140,
+        "fontUrl": "https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlvAx05IsDqlA.ttf",
+        "borderWidth": 0,
+        "borderColor": "#000000",
+        "boxShadow": {
+          "color": "#ffffff",
+          "x": 0,
+          "y": 0,
+          "blur": 0
+        }
+      }
+    }
+  },
+  "transitionIds": ["tQd94oyAWZvdg4ME-nwLEXIPkYJZ1WSD"]
+}
