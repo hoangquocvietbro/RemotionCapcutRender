@@ -1,15 +1,20 @@
 import { CalculateMetadataFunction } from "remotion";
 import { MetadataProps } from "../types";
-import { ITrackItemAndDetails } from "@designcombo/types";
+import { IDesign, ISize, ITrackItemAndDetails } from "@designcombo/types";
 import { DEFAULT_FPS, NOT_FOUND_IMAGE_URL } from "../constants";
 
 export const FPS = 30;
 export const WIDTH = 1080;
 export const HEIGHT = 1920;
 
+type Props = {
+  design: IDesign;
+  size: ISize;
+}
+
 export const calcMetadata: CalculateMetadataFunction<MetadataProps> = async ({
   props,
-}) => {
+}:{props:Props}) => {
   const { design } = props;
   const fps = design.fps ? design.fps : DEFAULT_FPS;
 

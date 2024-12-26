@@ -7,3 +7,4 @@ dist
 out
 .moon.env
 .test.env
+.snap.env

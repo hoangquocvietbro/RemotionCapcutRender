@@ -12,12 +12,12 @@ async function deploy() {
 		createCloudWatchLogGroup: true,
 		enableV5Runtime: true // update
 	});
-	console.log("functionName :",functionName)
+	console.log("LAMBDA_FUNCTION :",functionName)
 
 	const {bucketName} = await lambda.getOrCreateBucket({
 		region: process.env.AWS_REGION || "us-east-1",
 	});
-	console.log("bucketName :",bucketName)
+	console.log("LAMBDA_BUCKET :",bucketName)
 
 	const {serveUrl} = await lambda.deploySite({
 		bucketName,
@@ -25,7 +25,7 @@ async function deploy() {
 		region: process.env.AWS_REGION || "us-east-1",
 		siteName: process.env.SITE_NAME || 'remotion',
 	});
-	console.log("serveUrl :",serveUrl)
+	console.log("SERVER_URL :",serveUrl)
 }
 
 deploy();
