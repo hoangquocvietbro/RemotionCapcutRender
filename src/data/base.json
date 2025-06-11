@@ -1,15 +1,1218 @@
 {
-  "id": "bCEsiQ6QDAQWceQ5",
-  "fps": 30,
-  "tracks": [],
-  "size": {
-    "width": 1920,
-    "height": 1080
-  },
-  "duration": 5000,
-  "trackItemDetailsMap": {},
-  "trackItemIds": [],
-  "transitionsMap": {},
-  "trackItemsMap": {},
-  "transitionIds": []
+    "id": "ePEzxjqi02Ylfp",
+    "size": {
+        "width": 1080,
+        "height": 1920
+    },
+    "fps": 30,
+    "tracks": [
+        {
+            "id": "Ps_WpRmS2HhSydBhhlFUn",
+            "accepts": [
+                "text",
+                "audio",
+                "helper",
+                "video",
+                "image",
+                "caption",
+                "template"
+            ],
+            "type": "audio",
+            "items": [
+                "Ex2MiUkii32eho"
+            ],
+            "magnetic": false,
+            "static": false
+        },
+        {
+            "id": "lhkkx3fYfb05FY4",
+            "items": [
+                "V5HWEfA37oJA749H"
+            ],
+            "type": "image",
+            "accepts": [
+                "text",
+                "image",
+                "video",
+                "audio",
+                "caption",
+                "template"
+            ]
+        },
+        {
+            "id": "pQO9oPwNSpbO-1RYRtE4O",
+            "accepts": [
+                "text",
+                "audio",
+                "helper",
+                "video",
+                "image",
+                "caption",
+                "template"
+            ],
+            "type": "text",
+            "items": [
+                "caI4g2Y6YFswSHg7"
+            ],
+            "magnetic": false,
+            "static": false
+        },
+        {
+            "id": "px6nNGoOXqDoWkozmZb1l",
+            "type": "caption",
+            "items": [
+                "LSmid4sPjTfIWusX",
+                "fjCgBy3J2JQJe0z",
+                "NOlD4R9PWbsnGVO1",
+                "jleS9EPvoMVfsBpY"
+            ],
+            "static": false,
+            "accepts": [
+                "text",
+                "audio",
+                "helper",
+                "video",
+                "image",
+                "caption",
+                "template"
+            ],
+            "magnetic": false
+        },
+        {
+            "id": "Y6qxCxvIH2remlVy",
+            "type": "video",
+            "items": [
+                "nAnmv41fXDasKQcI",
+                "dBmThT8EstwY84kV",
+                "XG42LG4XzxOS0ggJ",
+                "CLNBw4nH3pJdl6d",
+                "GtThOp1beoFyK9i"
+            ],
+            "accepts": [
+                "text",
+                "image",
+                "video",
+                "audio",
+                "caption",
+                "template"
+            ]
+        }
+    ],
+    "trackItemIds": [
+        "XG42LG4XzxOS0ggJ",
+        "dBmThT8EstwY84kV",
+        "nAnmv41fXDasKQcI",
+        "CLNBw4nH3pJdl6d",
+        "GtThOp1beoFyK9i",
+        "LSmid4sPjTfIWusX",
+        "fjCgBy3J2JQJe0z",
+        "NOlD4R9PWbsnGVO1",
+        "jleS9EPvoMVfsBpY",
+        "caI4g2Y6YFswSHg7",
+        "V5HWEfA37oJA749H",
+        "Ex2MiUkii32eho"
+    ],
+    "trackItemsMap": {
+        "CLNBw4nH3pJdl6d": {
+            "id": "CLNBw4nH3pJdl6d",
+            "name": "video",
+            "trim": {
+                "from": 0,
+                "to": 6420.212765957442
+            },
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/OuB2WuXi4Ij-846p_bgiF.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "display": {
+                "from": 8750.000000000004,
+                "to": 15170.212765957445
+            },
+            "duration": 9500.000000000004,
+            "metadata": {
+                "previewUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/eD5-h-BnsGc3sZbyjLqia.png?t=3"
+            },
+            "playbackRate": 1
+        },
+        "GtThOp1beoFyK9i": {
+            "id": "GtThOp1beoFyK9i",
+            "name": "video",
+            "trim": {
+                "from": 0,
+                "to": 2686.1702127659464
+            },
+            "type": "video",
+            "details": {
+                "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "display": {
+                "from": 16750.00000000001,
+                "to": 19436.17021276596
+            },
+            "preview": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png",
+            "duration": 2686.1702127659482,
+            "metadata": {
+                "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+            },
+            "playbackRate": 1
+        },
+        "fjCgBy3J2JQJe0z": {
+            "id": "fjCgBy3J2JQJe0z",
+            "name": "caption",
+            "type": "caption",
+            "isMain": false,
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "channel.",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 75,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            },
+            "display": {
+                "from": 2560,
+                "to": 3060
+            },
+            "metadata": {
+                "words": [
+                    {
+                        "end": 3060,
+                        "word": "channel.",
+                        "start": 2560,
+                        "confidence": 0.7393827
+                    }
+                ],
+                "parentId": "nAnmv41fXDasKQcI",
+                "sourceUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4"
+            }
+        },
+        "LSmid4sPjTfIWusX": {
+            "id": "LSmid4sPjTfIWusX",
+            "name": "caption",
+            "type": "caption",
+            "isMain": false,
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "Welcome to Anime Tagalog Review",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            },
+            "display": {
+                "from": 799.99995,
+                "to": 2560
+            },
+            "metadata": {
+                "words": [
+                    {
+                        "end": 1199.9999,
+                        "word": "Welcome",
+                        "start": 799.99995,
+                        "confidence": 0.4898515
+                    },
+                    {
+                        "end": 1360,
+                        "word": "to",
+                        "start": 1199.9999,
+                        "confidence": 0.49412414
+                    },
+                    {
+                        "end": 1839.9999,
+                        "word": "Anime",
+                        "start": 1360,
+                        "confidence": 0.48271802
+                    },
+                    {
+                        "end": 2159.9998,
+                        "word": "Tagalog",
+                        "start": 1839.9999,
+                        "confidence": 0.97893196
+                    },
+                    {
+                        "end": 2560,
+                        "word": "Review",
+                        "start": 2159.9998,
+                        "confidence": 0.852286
+                    }
+                ],
+                "parentId": "nAnmv41fXDasKQcI",
+                "sourceUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4"
+            }
+        },
+        "NOlD4R9PWbsnGVO1": {
+            "id": "NOlD4R9PWbsnGVO1",
+            "name": "caption",
+            "type": "caption",
+            "isMain": false,
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "Enjoy Please subscribe,",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            },
+            "display": {
+                "from": 3520,
+                "to": 5200
+            },
+            "metadata": {
+                "words": [
+                    {
+                        "end": 4020,
+                        "word": "Enjoy",
+                        "start": 3520,
+                        "confidence": 0.42564744
+                    },
+                    {
+                        "end": 4799.9997,
+                        "word": "Please",
+                        "start": 4640,
+                        "confidence": 0.78752565
+                    },
+                    {
+                        "end": 5200,
+                        "word": "subscribe,",
+                        "start": 4799.9997,
+                        "confidence": 0.83375573
+                    }
+                ],
+                "parentId": "nAnmv41fXDasKQcI",
+                "sourceUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4"
+            }
+        },
+        "jleS9EPvoMVfsBpY": {
+            "id": "jleS9EPvoMVfsBpY",
+            "name": "caption",
+            "type": "caption",
+            "isMain": false,
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "subscribe, like, and comment.",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            },
+            "display": {
+                "from": 5200,
+                "to": 7299.9997
+            },
+            "metadata": {
+                "words": [
+                    {
+                        "end": 5700,
+                        "word": "subscribe,",
+                        "start": 5200,
+                        "confidence": 0.97628754
+                    },
+                    {
+                        "end": 6319.9997,
+                        "word": "like,",
+                        "start": 5920,
+                        "confidence": 0.8871912
+                    },
+                    {
+                        "end": 6799.9997,
+                        "word": "and",
+                        "start": 6319.9997,
+                        "confidence": 0.9994023
+                    },
+                    {
+                        "end": 7299.9997,
+                        "word": "comment.",
+                        "start": 6799.9997,
+                        "confidence": 0.987643
+                    }
+                ],
+                "parentId": "nAnmv41fXDasKQcI",
+                "sourceUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4"
+            }
+        },
+        "nAnmv41fXDasKQcI": {
+            "id": "nAnmv41fXDasKQcI",
+            "name": "video",
+            "trim": {
+                "to": 8000,
+                "from": 0
+            },
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "display": {
+                "from": 0,
+                "to": 8750.000000000004
+            },
+            "duration": 8750.000000000004,
+            "metadata": {
+                "previewUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/Zjgi-kCnkne2Dvpeifpkq.png?t=3"
+            },
+            "playbackRate": 1
+        },
+        "caI4g2Y6YFswSHg7": {
+            "id": "caI4g2Y6YFswSHg7",
+            "name": "text",
+            "type": "text",
+            "display": {
+                "from": 0,
+                "to": 5000
+            },
+            "metadata": {},
+            "isMain": false,
+            "details": {
+                "fontFamily": "AguafinaScript-Regular",
+                "fontSize": 71.9444,
+                "fontWeight": "normal",
+                "fontStyle": "normal",
+                "textDecoration": "none",
+                "textAlign": "center",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "wordSpacing": "normal",
+                "color": "#c50000",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "textShadow": "none",
+                "text": "Heading and some body",
+                "opacity": 100,
+                "width": 356,
+                "wordWrap": "break-word",
+                "wordBreak": "normal",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px",
+                "top": "651.421px",
+                "left": "626.416px",
+                "textTransform": "none",
+                "transform": "none",
+                "skewX": 0,
+                "skewY": 0,
+                "height": 259,
+                "fontUrl": "https://fonts.gstatic.com/s/aguafinascript/v9/If2QXTv_ZzSxGIO30LemWEOmt1bHqs4pgicOrg.ttf",
+                "borderWidth": 0,
+                "borderColor": "#000000",
+                "boxShadow": {
+                    "color": "#1f7b00",
+                    "x": 5,
+                    "y": 5,
+                    "blur": 5
+                }
+            }
+        },
+        "V5HWEfA37oJA749H": {
+            "id": "V5HWEfA37oJA749H",
+            "type": "image",
+            "name": "image",
+            "display": {
+                "from": 0,
+                "to": 8377.659574468085
+            },
+            "playbackRate": 1,
+            "metadata": {},
+            "details": {
+                "src": "https://ik.imagekit.io/wombo/images/img5.jpg",
+                "width": 1920,
+                "height": 1280,
+                "opacity": 100,
+                "transform": "scale(0.155146, 0.155146)",
+                "border": "none",
+                "borderRadius": 0,
+                "boxShadow": {
+                    "color": "#000000",
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0
+                },
+                "top": "333.625px",
+                "left": "-801.77px",
+                "borderWidth": 0,
+                "borderColor": "#000000",
+                "blur": 0,
+                "brightness": 100,
+                "flipX": false,
+                "flipY": false,
+                "rotate": "0deg",
+                "visibility": "visible"
+            }
+        },
+        "Ex2MiUkii32eho": {
+            "id": "Ex2MiUkii32eho",
+            "name": "Dawn of change",
+            "type": "audio",
+            "display": {
+                "from": 0,
+                "to": 20531.914893617017
+            },
+            "trim": {
+                "from": 0,
+                "to": 20531.914893617017
+            },
+            "playbackRate": 1,
+            "metadata": {
+                "author": "Roman Senyk"
+            },
+            "duration": 20531.914893617017,
+            "isMain": false,
+            "details": {
+                "src": "https://cdn.designcombo.dev/audio/Dawn%20of%20change.mp3",
+                "volume": 100
+            }
+        },
+        "dBmThT8EstwY84kV": {
+            "id": "dBmThT8EstwY84kV",
+            "name": "video",
+            "trim": {
+                "from": 6420.212765957442,
+                "to": 8000
+            },
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/OuB2WuXi4Ij-846p_bgiF.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "display": {
+                "from": 15170.212765957445,
+                "to": 18250.000000000007
+            },
+            "duration": 9500.000000000004,
+            "metadata": {
+                "previewUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/eD5-h-BnsGc3sZbyjLqia.png?t=3"
+            },
+            "playbackRate": 1
+        },
+        "XG42LG4XzxOS0ggJ": {
+            "id": "XG42LG4XzxOS0ggJ",
+            "name": "video",
+            "trim": {
+                "from": 2686.1702127659464,
+                "to": 12000
+            },
+            "type": "video",
+            "details": {
+                "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "display": {
+                "from": 19436.17021276596,
+                "to": 29500.00000000002
+            },
+            "preview": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png",
+            "duration": 10063.829787234059,
+            "metadata": {
+                "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+            },
+            "playbackRate": 1
+        }
+    },
+    "transitionIds": [
+        "nAnmv41fXDasKQcI-CLNBw4nH3pJdl6d",
+        "CLNBw4nH3pJdl6d-dBmThT8EstwY84kV",
+        "dBmThT8EstwY84kV-GtThOp1beoFyK9i",
+        "GtThOp1beoFyK9i-XG42LG4XzxOS0ggJ"
+    ],
+    "transitionsMap": {
+        "nAnmv41fXDasKQcI-CLNBw4nH3pJdl6d": {
+            "id": "nAnmv41fXDasKQcI-CLNBw4nH3pJdl6d",
+            "duration": 1500,
+            "fromId": "nAnmv41fXDasKQcI",
+            "toId": "CLNBw4nH3pJdl6d",
+            "kind": "none",
+            "trackId": "Y6qxCxvIH2remlVy",
+            "type": "transition"
+        },
+        "CLNBw4nH3pJdl6d-dBmThT8EstwY84kV": {
+            "id": "CLNBw4nH3pJdl6d-dBmThT8EstwY84kV",
+            "duration": 1500,
+            "fromId": "CLNBw4nH3pJdl6d",
+            "toId": "dBmThT8EstwY84kV",
+            "kind": "flip",
+            "trackId": "Y6qxCxvIH2remlVy",
+            "type": "transition",
+            "direction": "from-top"
+        },
+        "dBmThT8EstwY84kV-GtThOp1beoFyK9i": {
+            "id": "dBmThT8EstwY84kV-GtThOp1beoFyK9i",
+            "duration": 1500,
+            "fromId": "dBmThT8EstwY84kV",
+            "toId": "GtThOp1beoFyK9i",
+            "kind": "none",
+            "trackId": "Y6qxCxvIH2remlVy",
+            "type": "transition"
+        },
+        "GtThOp1beoFyK9i-XG42LG4XzxOS0ggJ": {
+            "id": "GtThOp1beoFyK9i-XG42LG4XzxOS0ggJ",
+            "duration": 1500,
+            "fromId": "GtThOp1beoFyK9i",
+            "toId": "XG42LG4XzxOS0ggJ",
+            "kind": "slide",
+            "trackId": "Y6qxCxvIH2remlVy",
+            "type": "transition",
+            "direction": "from-bottom"
+        }
+    },
+    "scale": {
+        "index": 7,
+        "unit": 300,
+        "zoom": 0.0033333333333333335,
+        "segments": 5
+    },
+    "duration": 28000.000000000025,
+    "activeIds": [],
+    "trackItemDetailsMap": {
+        "CLNBw4nH3pJdl6d": {
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/OuB2WuXi4Ij-846p_bgiF.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "metadata": {
+                "previewUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/eD5-h-BnsGc3sZbyjLqia.png?t=3"
+            }
+        },
+        "GtThOp1beoFyK9i": {
+            "type": "video",
+            "details": {
+                "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "metadata": {
+                "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+            }
+        },
+        "fjCgBy3J2JQJe0z": {
+            "type": "caption",
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "channel.",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 75,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            }
+        },
+        "LSmid4sPjTfIWusX": {
+            "type": "caption",
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "Welcome to Anime Tagalog Review",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            }
+        },
+        "NOlD4R9PWbsnGVO1": {
+            "type": "caption",
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "Enjoy Please subscribe,",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            }
+        },
+        "jleS9EPvoMVfsBpY": {
+            "type": "caption",
+            "details": {
+                "top": 192,
+                "left": 240,
+                "text": "subscribe, like, and comment.",
+                "color": "#DADADA",
+                "skewX": 0,
+                "skewY": 0,
+                "width": 600,
+                "words": [],
+                "border": "none",
+                "height": 150,
+                "fontUrl": "https://cdn.designcombo.dev/fonts/the-bold-font.ttf",
+                "opacity": 100,
+                "fontSize": 60,
+                "wordWrap": "normal",
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "fontStyle": "normal",
+                "textAlign": "center",
+                "transform": "none",
+                "wordBreak": "normal",
+                "fontFamily": "theboldfont",
+                "fontWeight": "normal",
+                "lineHeight": "normal",
+                "textShadow": "none",
+                "activeColor": "#50FF12",
+                "borderColor": "#000000",
+                "borderWidth": 10,
+                "wordSpacing": "normal",
+                "appearedColor": "#FFFFFF",
+                "letterSpacing": "normal",
+                "textTransform": "none",
+                "textDecoration": "none",
+                "activeFillColor": "#7E12FF",
+                "backgroundColor": "transparent",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px"
+            }
+        },
+        "nAnmv41fXDasKQcI": {
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/ICC5kOJLN3NcXrU9y03fJ.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            }
+        },
+        "caI4g2Y6YFswSHg7": {
+            "type": "text",
+            "details": {
+                "fontFamily": "AguafinaScript-Regular",
+                "fontSize": 71.9444,
+                "fontWeight": "normal",
+                "fontStyle": "normal",
+                "textDecoration": "none",
+                "textAlign": "center",
+                "lineHeight": "normal",
+                "letterSpacing": "normal",
+                "wordSpacing": "normal",
+                "color": "#c50000",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "textShadow": "none",
+                "text": "Heading and some body",
+                "opacity": 100,
+                "width": 356,
+                "wordWrap": "break-word",
+                "wordBreak": "normal",
+                "WebkitTextStrokeColor": "#ffffff",
+                "WebkitTextStrokeWidth": "0px",
+                "top": "651.421px",
+                "left": "626.416px",
+                "textTransform": "none",
+                "transform": "none",
+                "skewX": 0,
+                "skewY": 0,
+                "height": 259,
+                "fontUrl": "https://fonts.gstatic.com/s/aguafinascript/v9/If2QXTv_ZzSxGIO30LemWEOmt1bHqs4pgicOrg.ttf",
+                "borderWidth": 0,
+                "borderColor": "#000000",
+                "boxShadow": {
+                    "color": "#1f7b00",
+                    "x": 5,
+                    "y": 5,
+                    "blur": 5
+                }
+            }
+        },
+        "V5HWEfA37oJA749H": {
+            "type": "image",
+            "details": {
+                "src": "https://ik.imagekit.io/wombo/images/img5.jpg",
+                "width": 1920,
+                "height": 1280,
+                "opacity": 100,
+                "transform": "scale(0.155146, 0.155146)",
+                "border": "none",
+                "borderRadius": 0,
+                "boxShadow": {
+                    "color": "#000000",
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0
+                },
+                "top": "333.625px",
+                "left": "-801.77px",
+                "borderWidth": 0,
+                "borderColor": "#000000",
+                "blur": 0,
+                "brightness": 100,
+                "flipX": false,
+                "flipY": false,
+                "rotate": "0deg",
+                "visibility": "visible"
+            }
+        },
+        "Ex2MiUkii32eho": {
+            "type": "audio",
+            "details": {
+                "src": "https://cdn.designcombo.dev/audio/Dawn%20of%20change.mp3",
+                "volume": 100
+            }
+        },
+        "dBmThT8EstwY84kV": {
+            "type": "video",
+            "details": {
+                "src": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/OuB2WuXi4Ij-846p_bgiF.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "metadata": {
+                "previewUrl": "https://cdn.subgen.co/upload/--7Ttj8xGG_mcvPwBMjH-/others/eD5-h-BnsGc3sZbyjLqia.png?t=3"
+            }
+        },
+        "XG42LG4XzxOS0ggJ": {
+            "type": "video",
+            "details": {
+                "src": "https://cdn.designcombo.dev/videos/demo-video-1.mp4",
+                "top": "600px",
+                "blur": 0,
+                "left": "-100px",
+                "flipX": false,
+                "flipY": false,
+                "width": 1280,
+                "height": 720,
+                "rotate": "0deg",
+                "volume": 100,
+                "opacity": 100,
+                "boxShadow": {
+                    "x": 0,
+                    "y": 0,
+                    "blur": 0,
+                    "color": "#000000"
+                },
+                "transform": "scale(0.84375)",
+                "brightness": 100,
+                "visibility": "visible",
+                "borderColor": "#000000",
+                "borderWidth": 0,
+                "borderRadius": 0
+            },
+            "metadata": {
+                "previewUrl": "https://cdn.designcombo.dev/thumbnails/demo-video-s-1.png"
+            }
+        }
+    },
+    "structure": [],
+    "name": "Untitled video"
 }

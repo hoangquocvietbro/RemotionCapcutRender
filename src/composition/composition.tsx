@@ -31,6 +31,10 @@ export const Composition = ({
   const { fps } = useVideoConfig();
   const currentFrame = useCurrentFrame();
 
+  console.log("currentFrame")
+  console.log(currentFrame)
+  console.log("currentFrame")
+
   const fetchData = useCallback(async () => {
     const fonts: IFont[] = [];
     const trackItemsMap = design.trackItemsMap as Record<
@@ -126,8 +130,10 @@ export const Composition = ({
 
         return SequenceItem[item.type](item, {
           fps,
+          currentFrame,
         });
       })}
     </>
   );
 };
+export default Composition

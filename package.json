@@ -6,6 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@designcombo/events": "^1.0.2",
+    "@designcombo/state": "^3.1.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@remotion/cli": "4.0.221",
@@ -21,10 +23,11 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "remotion": "4.0.221",
-    "zod": "3.22.3"
+    "zod": "3.22.3",
+    "zustand": "^5.0.5"
   },
   "devDependencies": {
-    "@designcombo/types": "^2.0.1",
+    "@designcombo/types": "^3.1.1",
     "@remotion/eslint-config": "4.0.221",
     "@types/react": "18.3.1",
     "@types/web": "0.0.166",
